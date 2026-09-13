@@ -1899,3 +1899,27 @@ body {
     align-items: center;
   }
 }
+
+.legal-page {
+  padding: 120px 0 80px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.legal-page h1 {
+  color: var(--text-main);
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 12px;
+}
+.legal-page .legal-lead {
+  margin-bottom: 32px;
+  color: var(--text-dim);
+}
+.legal-page h2 {
+  color: var(--text-main);
+  font-size: 1.2rem;
+  margin: 28px 0 10px;
+}
+.legal-page a {
+  color: var(--neon-cyan);
+}

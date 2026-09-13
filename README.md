@@ -8,7 +8,7 @@
 - **Калькулятор времени и нервов**: Геймифицированный ползунок расчета сэкономленных часов.
 - **SEO & AI Search**:
   - Полная семантическая разметка HTML5.
-  - Schema.org JSON-LD (`SoftwareApplication`, `FAQPage`, `HowTo`, `AggregateRating`).
+  - Schema.org JSON-LD (`Organization`, `WebSite`, `SoftwareApplication`, `FAQPage`).
   - Стандарт `llms.txt` для индексации нейросетями (Perplexity, ChatGPT, Claude).
   - Оптимизированные `robots.txt` и `sitemap.xml`.
 - **Полная адаптивность**: Безупречно отображается на мобильных устройствах, планшетах и 4K-мониторах.

@@ -3,32 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>АйШпора (@aishpora_bot) — ИИ-Решебник и Калькулятор по фото в Telegram | ГДЗ с объяснением</title>
+  <title>АйШпора — ИИ-решебник в Telegram</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Умный Telegram-бот «АйШпора» решает алгебру, геометрию, физику и химию за 3 секунды по фото тетради или прямо в чате класса! 3 стиля решения: на пальцах для бро, по ГОСТу для тетради и быстрая шпора. 5 решений бесплатно!">
-  <meta name="keywords" content="решебник онлайн, гдз по фото, решение задач по фото, ии калькулятор, решебник телеграм, айшпора бот, бот решебник в чат, решение задач с шагами, подготовка к огэ егэ, решение физики химии геометрии">
+  <meta name="description" content="Telegram-бот решает алгебру, физику и химию по фото тетради. Три стиля ответа, инлайн в чате, 5 решений бесплатно.">
   <meta name="author" content="АйШпора">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://aishpora.dontseekme.ru/">
   <meta name="yandex-verification" content="66e7b3d858170aec">
+  <link rel="preload" as="image" href="hero.webp" type="image/webp">
 
   <!-- OpenGraph / Social Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="АйШпора">
-  <meta property="og:title" content="АйШпора — Вирусный ИИ-Решебник и Калькулятор по фото в Telegram">
-  <meta property="og:description" content="Фоткай задачу из тетради — получай решение за 3 секунды в 3 стилях: «Как для бро», «По ГОСТу» или «Шпора». Работает прямо в Telegram!">
-  <meta property="og:image" content="Gemini_Generated_Image_rgvzztrgvzztrgvz.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="675">
+  <meta property="og:title" content="АйШпора — ИИ-решебник в Telegram">
+  <meta property="og:description" content="Telegram-бот решает алгебру, физику и химию по фото тетради. Три стиля ответа, инлайн в чате, 5 решений бесплатно.">
+  <meta property="og:image" content="https://aishpora.dontseekme.ru/og-image.jpg">
+  <meta property="og:image:width" content="1100">
+  <meta property="og:image:height" content="578">
+  <meta property="og:image:alt" content="АйШпора — ИИ-решебник в Telegram">
   <meta property="og:url" content="https://aishpora.dontseekme.ru/">
   <meta property="og:locale" content="ru_RU">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="АйШпора (@aishpora_bot) — ИИ-Решебник в Telegram">
-  <meta name="twitter:description" content="Решай домашки, контрольные и тесты по фото за 3 секунды. Бесплатный старт!">
-  <meta name="twitter:image" content="Gemini_Generated_Image_rgvzztrgvzztrgvz.jpg">
+  <meta name="twitter:title" content="АйШпора — ИИ-решебник в Telegram">
+  <meta name="twitter:description" content="Решение задач по фото в Telegram. 5 решений бесплатно.">
+  <meta name="twitter:image" content="https://aishpora.dontseekme.ru/og-image.jpg">
 
   <!-- Favicon Package -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -58,28 +59,43 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": "https://aishpora.dontseekme.ru/#organization",
+        "name": "АйШпора",
+        "alternateName": "@aishpora_bot",
+        "url": "https://aishpora.dontseekme.ru/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://aishpora.dontseekme.ru/logo.webp"
+        },
+        "sameAs": ["https://t.me/aishpora_bot"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://aishpora.dontseekme.ru/#website",
+        "url": "https://aishpora.dontseekme.ru/",
+        "name": "АйШпора",
+        "inLanguage": "ru",
+        "publisher": { "@id": "https://aishpora.dontseekme.ru/#organization" }
+      },
+      {
         "@type": "SoftwareApplication",
         "@id": "https://aishpora.dontseekme.ru/#app",
         "name": "АйШпора (AI Shpora)",
         "alternateName": "@aishpora_bot",
         "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Telegram, Web, Android, iOS, Windows, macOS",
+        "operatingSystem": "Telegram",
         "url": "https://t.me/aishpora_bot",
-        "image": "https://aishpora.dontseekme.ru/Gemini_Generated_Image_87pvtq87pvtq87pv.jpg",
-        "description": "Вирусный ИИ-решебник и умный калькулятор в Telegram. Мгновенное решение математики, физики, химии и геометрии по фото тетрадей и в инлайн-режиме.",
+        "image": "https://aishpora.dontseekme.ru/og-image.jpg",
+        "description": "ИИ-решебник и калькулятор в Telegram: решение математики, физики, химии и геометрии по фото и в инлайн-режиме.",
+        "publisher": { "@id": "https://aishpora.dontseekme.ru/#organization" },
         "offers": {
           "@type": "AggregateOffer",
           "lowPrice": "0",
           "highPrice": "499",
           "priceCurrency": "RUB",
-          "offerCount": "4"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "1420",
-          "bestRating": "5",
-          "worstRating": "1"
+          "offerCount": "4",
+          "description": "Бесплатный старт и пакеты решений. Реферальная программа: +5 решений за приглашение."
         }
       },
       {
@@ -88,34 +104,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Учитель поймет, что я списал задачу из нейросети?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Нет! Режим «По ГОСТу» оформляет решение строго по правилам школьных учебников: с блоками «Дано», «Найти», формулами, подробными действиями и размерностями единиц измерения. А в режиме «Как для бро» ты сможешь за 30 секунд понять суть решения и уверенно ответить у доски."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "Бот действительно распознает неразборчивый почерк в тетради?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Да! АйШпора использует мультимодальный каскад передовых ИИ-моделей (Vision AI), обученных на тысячах снимков школьных тетрадей в клетку и линейку, смазанных фото с задней парты и сложных математических графиков."
+              "text": "АйШпора распознаёт рукописный текст в тетради, формулы и чертежи по фото. Лучше работает, если текст не перекрыт пальцем и нет сильного блика."
             }
           },
           {
             "@type": "Question",
-            "name": "Как работает инлайн-режим в групповом чате с одноклассниками?",
+            "name": "Как работает инлайн-режим в групповом чате?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "В любом чате Telegram начни писать @aishpora_bot и через пробел введи уравнение (например: @aishpora_bot 2x^2 - 8 = 0). Появится всплывающая подсказка с решением — нажми на неё, и карточка с ответом мгновенно отправится в беседу!"
+              "text": "В любом чате Telegram начните писать @aishpora_bot и через пробел введите уравнение. Появится подсказка с решением — нажмите, чтобы отправить карточку в беседу."
             }
           },
           {
             "@type": "Question",
-            "name": "Какие школьные и студенческие предметы поддерживает бот?",
+            "name": "Какие предметы поддерживает бот?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "АйШпора решает математику, алгебру, геометрию (включая чертежи), физику (все разделы), химию (уравнивание реакций и расчет молярных масс), высшую математику (производные, интегралы, пределы), а также финансовые проценты и пропорции."
+              "text": "Математика, алгебра, геометрия, физика, химия, высшая математика (производные, интегралы, пределы), проценты и пропорции."
             }
           },
           {
@@ -123,29 +131,16 @@
             "name": "Сколько стоит использование АйШпоры?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "При регистрации ты сразу получаешь 5 полных подробных решений бесплатно, а базовый калькулятор и простые вычисления бесплатны навсегда. Дополнительные пакеты стоят от 49 ₽ за 20 задач до 499 ₽ за полный месячный безлимит."
+              "text": "Старт: 5 полных решений бесплатно, базовый калькулятор без лимита. Пакеты от 49 ₽ за 20 задач до 499 ₽ за месячный безлимит."
             }
-          }
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "name": "Как решить задачу с помощью Telegram-бота АйШпора за 3 шага",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "name": "Открой бота в Telegram",
-            "text": "Перейди по ссылке @aishpora_bot и нажми Start."
           },
           {
-            "@type": "HowToStep",
-            "name": "Сделай фото или отправь условие",
-            "text": "Сфотографируй тетрадь, учебник или напиши пример текстом."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Выбери стиль объяснения",
-            "text": "Выбери «Бро» для быстрого понимания, «ГОСТ» для идеального оформления в тетрадь или «Шпору» для мгновенного ответа."
+            "@type": "Question",
+            "name": "Как получать решения бесплатно без покупки тарифов?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В боте откройте «Рефералка (+5)» или команду /ref. За каждого друга по вашей ссылке вы и друг получаете +5 решений."
+            }
           }
         ]
       }
@@ -176,7 +171,7 @@
   <header class="header">
     <div class="container header-inner">
       <a href="/" class="brand-logo" title="АйШпора — ИИ-Решебник">
-        <img src="Gemini_Generated_Image_87pvtq87pvtq87pv.jpg" alt="Логотип АйШпора" class="brand-badge-img">
+        <img src="logo.webp" alt="Логотип АйШпора" class="brand-badge-img" width="64" height="64">
         <span class="brand-name">АйШпора</span>
       </a>
 
@@ -269,7 +264,7 @@
         <!-- Hero Graphic Showcase -->
         <div class="hero-media-wrapper">
           <div class="hero-banner-card">
-            <img src="Gemini_Generated_Image_rgvzztrgvzztrgvz.jpg" alt="Добро пожаловать в АйШпору — Твой ИИ решебник и калькулятор" class="hero-banner-img" loading="eager">
+            <img src="hero.webp" alt="АйШпора — ИИ решебник и калькулятор в Telegram" class="hero-banner-img" width="1200" height="630" loading="eager">
             <div class="hero-card-meta">
               <div class="user-count-pill">
                 <div class="avatar-stack">
@@ -1036,9 +1031,9 @@
           <div class="footer-title">Бот и связь</div>
           <ul class="footer-links">
             <li><a href="https://t.me/aishpora_bot" target="_blank" rel="noopener noreferrer" class="footer-link">Telegram: @aishpora_bot</a></li>
+            <li><a href="privacy.html" class="footer-link">Конфиденциальность</a></li>
+            <li><a href="terms.html" class="footer-link">Условия</a></li>
             <li><a href="llms.txt" class="footer-link">Для ИИ (llms.txt)</a></li>
-            <li><a href="sitemap.xml" class="footer-link">Sitemap XML</a></li>
-            <li><a href="robots.txt" class="footer-link">Robots.txt</a></li>
           </ul>
         </div>
       </div>
