@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackgroundMathParticles();
   initSimulator();
   initCalculator();
+  initReferralCalculator();
   initFaqAccordion();
   initMobileNav();
   initCopyButtons();
@@ -375,6 +376,43 @@ function initCalculator() {
   hwSlider.addEventListener('input', updateCalc);
   subSlider.addEventListener('input', updateCalc);
   updateCalc();
+}
+
+/* ==========================================================================
+   3.1 REFERRAL PROGRAM CALCULATOR
+   ========================================================================== */
+function initReferralCalculator() {
+  const refSlider = document.getElementById('refFriendsSlider');
+  const refBadge = document.getElementById('refFriendsBadge');
+  const resSolutionsEl = document.getElementById('refResSolutions');
+  const resMoneyEl = document.getElementById('refResMoney');
+  const resTimeEl = document.getElementById('refResTime');
+
+  if (!refSlider) return;
+
+  function updateReferralCalc() {
+    const friends = parseInt(refSlider.value, 10);
+    const bonusSolutions = friends * 5;
+    const savedRub = Math.round(bonusSolutions * 2.5);
+    const savedHours = Math.round(friends * 1.5);
+
+    // Russian pluralization
+    let friendsWord = 'друзей';
+    const lastDigit = friends % 10;
+    const lastTwo = friends % 100;
+    if (lastTwo < 11 || lastTwo > 19) {
+      if (lastDigit === 1) friendsWord = 'друг';
+      else if (lastDigit >= 2 && lastDigit <= 4) friendsWord = 'друга';
+    }
+
+    if (refBadge) refBadge.textContent = `${friends} ${friendsWord}`;
+    if (resSolutionsEl) resSolutionsEl.textContent = `+${bonusSolutions}`;
+    if (resMoneyEl) resMoneyEl.textContent = `~${savedRub} ₽`;
+    if (resTimeEl) resTimeEl.textContent = `~${savedHours} ч`;
+  }
+
+  refSlider.addEventListener('input', updateReferralCalc);
+  updateReferralCalc();
 }
 
 /* ==========================================================================

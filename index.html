@@ -186,6 +186,7 @@
         <li><a href="#features" class="nav-link">Фичи</a></li>
         <li><a href="#inline" class="nav-link">Инлайн</a></li>
         <li><a href="#calculator" class="nav-link">Калькулятор</a></li>
+        <li><a href="#referral" class="nav-link">Рефералка</a></li>
         <li><a href="#tariffs" class="nav-link">Тарифы</a></li>
         <li><a href="#faq" class="nav-link">FAQ</a></li>
         <li class="mobile-menu-extra">
@@ -586,6 +587,97 @@
     </section>
 
     <!-- ==========================================================================
+         REFERRAL PROGRAM (+5 SOLUTIONS PER FRIEND)
+         ========================================================================== -->
+    <section id="referral" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">🎁 Бесплатные решения навсегда</div>
+          <h2 class="section-title">Приглашай друзей — учитесь на 5+ бесплатно!</h2>
+          <p class="section-desc">
+            Win-Win для тебя и одноклассников. За каждого друга, перешедшего по твоей ссылке, ты получаешь <strong>+5 решений</strong>, а твой друг — <strong>+5 решений в подарок</strong> на старте!
+          </p>
+        </div>
+
+        <!-- 3 Viral Steps -->
+        <div class="referral-steps-grid">
+          <div class="referral-step-card">
+            <div class="step-num-badge">01</div>
+            <div class="step-icon">🔗</div>
+            <h3 class="step-title">Забери ссылку в боте</h3>
+            <p class="step-desc">
+              Открой бота, нажми <strong>«👥 Рефералка (+5)»</strong> или напиши <code>/ref</code> — твоя персональная ссылка сгенерируется мгновенно в 1 клик.
+            </p>
+          </div>
+
+          <div class="referral-step-card highlight">
+            <div class="step-num-badge">02</div>
+            <div class="step-icon">💬</div>
+            <h3 class="step-title">Скинь в беседу класса</h3>
+            <p class="step-desc">
+              Отправь ссылку одноклассникам или закинь в школьный чат. Друг нажимает Start и сразу получает 10 решений (5 базовых + 5 от тебя).
+            </p>
+          </div>
+
+          <div class="referral-step-card">
+            <div class="step-num-badge">03</div>
+            <div class="step-icon">🚀</div>
+            <h3 class="step-title">Получай +5 решений</h3>
+            <p class="step-desc">
+              Бонус начисляется тебе в ту же секунду с уведомлением в Telegram. 10 друзей = 50 сложных задач бесплатно без ограничений по времени!
+            </p>
+          </div>
+        </div>
+
+        <!-- Gamified Referral Calculator -->
+        <div class="ref-calc-box">
+          <div class="ref-calc-controls">
+            <div class="calc-label-row">
+              <span style="font-weight: 700; font-size: 1.05rem;">Сколько одноклассников и друзей позовёшь?</span>
+              <span class="calc-value-badge" id="refFriendsBadge">5 друзей</span>
+            </div>
+            <input type="range" min="1" max="30" value="5" class="calc-slider" id="refFriendsSlider" aria-label="Количество друзей">
+
+            <div class="ref-perks-list">
+              <div class="ref-perk-item">
+                <span class="icon">⚡</span>
+                <span>Мгновенное начисление на баланс сразу после первого входа друга</span>
+              </div>
+              <div class="ref-perk-item">
+                <span class="icon">♾️</span>
+                <span>Накопленные решения никогда не сгорают и действуют бессрочно</span>
+              </div>
+              <div class="ref-perk-item">
+                <span class="icon">📸</span>
+                <span>Работает на любые сложные задачи: фото тетрадей, геометрию и файлы</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ref-calc-results">
+            <div class="ref-res-solutions" id="refResSolutions">+25</div>
+            <div class="ref-res-sub">бесплатных решений сложных задач</div>
+
+            <div class="ref-stats-mini">
+              <div class="ref-mini-box">
+                <div class="ref-mini-val" id="refResMoney">~125 ₽</div>
+                <div class="ref-mini-lbl">Чистая экономия</div>
+              </div>
+              <div class="ref-mini-box">
+                <div class="ref-mini-val" id="refResTime">~8 ч</div>
+                <div class="ref-mini-lbl">Сберегли времени</div>
+              </div>
+            </div>
+
+            <a href="https://t.me/aishpora_bot" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+              <span>🎁 Забрать реферальную ссылку в Telegram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
          TARIFFS & PRICING
          ========================================================================== -->
     <section id="tariffs" class="section">
@@ -687,6 +779,22 @@
 
         <div style="text-align: center; margin-top: 24px; color: var(--text-dim); font-size: 0.85rem;">
           💳 Оплата в 1 клик через СБП (Система быстрых платежей), Тинькофф, Сбер и любые банковские карты РФ.
+        </div>
+
+        <!-- Referral Promo Banner under Tariffs -->
+        <div class="referral-tariff-banner">
+          <div class="banner-icon-col">🎁</div>
+          <div class="banner-text-col">
+            <div class="banner-title">Не хочешь тратить деньги? Получай решения бесплатно!</div>
+            <div class="banner-desc">
+              Приглашай одноклассников в бота — дарим по <strong>+5 бонусных решений</strong> за каждого друга тебе и ему без ограничений по времени!
+            </div>
+          </div>
+          <div class="banner-btn-col">
+            <a href="#referral" class="btn btn-outline btn-sm">
+              <span>Как позвать друзей →</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -847,6 +955,19 @@
               </p>
             </div>
           </div>
+
+          <!-- Item 7: Referral Program -->
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Как получать решения бесплатно без покупки тарифов?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                Через нашу реферальную программу! Зайди в бота, нажми кнопку <b>«👥 Рефералка (+5)»</b> или отправь команду <code>/ref</code>, скопируй персональную ссылку и поделись ею с одноклассниками или в школьной беседе. За каждого друга, перешедшего по ссылке, ты мгновенно получаешь <b>+5 решений</b>, а твой друг — <b>+5 решений в подарок</b> на старт. Пригласишь 10 друзей — получишь 50 задач бесплатно без срока давности!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -896,6 +1017,7 @@
             <li><a href="#simulator" class="footer-link">Симулятор задач</a></li>
             <li><a href="#features" class="footer-link">Возможности</a></li>
             <li><a href="#inline" class="footer-link">Инлайн в чатах</a></li>
+            <li><a href="#referral" class="footer-link">Рефералка (+5)</a></li>
             <li><a href="#tariffs" class="footer-link">Тарифы</a></li>
           </ul>
         </div>
